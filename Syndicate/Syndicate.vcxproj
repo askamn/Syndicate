@@ -60,6 +60,7 @@
       <PreprocessorDefinitions>SYN_PLATFORM_WINDOWS;SYN_BUILD_DLL;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -75,6 +76,7 @@
       <PreprocessorDefinitions>SYN_PLATFORM_WINDOWS;SYN_BUILD_DLL;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)vendor\spdlog\include</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -84,10 +86,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\Syndicate\Utility\Log.cpp" />
     <ClCompile Include="src\Syndicate\Application.cpp" />
     <ClCompile Include="src\Syndicate\Core.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Syndicate\Utility\Log.h" />
     <ClInclude Include="src\Syndicate.h" />
     <ClInclude Include="src\Syndicate\Application.h" />
     <ClInclude Include="src\Syndicate\Core.h" />

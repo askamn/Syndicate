@@ -11,6 +11,10 @@ namespace Syndicate
 
 int main(int argc, char** argv)
 {
+	Syndicate::Utility::Log::Init();
+
+	SYN_CORE_INFO("Awesome!");
+
 	auto application = Syndicate::CreateApplication();
 	application->Run();
 	delete application;

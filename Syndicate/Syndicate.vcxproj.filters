@@ -21,6 +21,9 @@
     <ClCompile Include="src\Syndicate\Core.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Syndicate\Utility\Log.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Syndicate\Application.h">
@@ -33,6 +36,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="src\Syndicate\EntryPoint.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Syndicate\Utility\Log.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
